@@ -19,9 +19,8 @@ class App extends Component {
             }
             scroll
           >
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
+            <Navigation style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <Link to="/about">About Me</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
@@ -33,9 +32,8 @@ class App extends Component {
               </Link>
             }
           >
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
+            <Navigation style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <Link to="/about">About Me</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>

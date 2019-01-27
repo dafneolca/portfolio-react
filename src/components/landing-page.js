@@ -7,53 +7,79 @@ class LandingPage extends Component {
       <div style={{ width: "100%", margin: "auto" }}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/200px-Hello_kitty_character_portrait.png"
+            {/* <img
+              src="https://www.clipartmax.com/png/middle/108-1087937_water-wave-icon.png"
               alt="avatar"
               className="avatar-image"
-            />
-
-            <div className="banner-text">
-              <h1>Frontend Web Developer</h1>
+            /> */}
+            <div className="main-landing-intro">
+              <div className="wavez" />
+              {/* <div classN */}
+              <div className="bk-title">
+                <div>
+                  <h2
+                    className="highlight before"
+                    style={{ textAlign: "left" }}
+                  >
+                    Frontend Web Development
+                  </h2>
+                  <h1>
+                    <span className="highlight">PORT</span>FOLIO
+                  </h1>
+                  <h2>Dafne Olca</h2>
+                </div>
+              </div>
+              <div className="banner-text">
+                {/* <h3 style={{ color: "pink" }}>Frontend Web Developer</h3>
+              <h5 style={{ color: "pink" }}>Dafne Olca</h5>
               <hr />
-              <p>HTML | CSS | Bootstrap | JavaScript | Angular2+ | React</p>
+              <p>HTML | CSS | Bootstrap | JavaScript | Angular2+ | React</p> */}
 
-              <div className="social-links">
-                {/* LinkedIn */}
-                <a
-                  href="https://linkedin.com/in/dafneolca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-linkedin-square" aria-hidden="true" />
-                </a>
+                <div className="social-links">
+                  <a
+                    href="https://linkedin.com/in/dafneolca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                  </a>
 
-                {/* Github */}
-                <a
-                  href="https://github.com/dafneolca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-github-square" aria-hidden="true" />
-                </a>
+                  <a
+                    href="https://github.com/dafneolca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa fa-github-square" aria-hidden="true" />
+                  </a>
 
-                {/* FreeCodeCamp*/}
-                <a
-                  href="https://www.freecodecamp.org/dafneolca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-free-code-camp" aria-hidden="true" />
-                </a>
+                  <a
+                    href="https://www.freecodecamp.org/dafneolca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa fa-free-code-camp" aria-hidden="true" />
+                  </a>
 
-                {/* Codepen*/}
-                <a
-                  href="https://codepen.io/dafneolca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <a
+                    href="https://codepen.io/dafneolca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa fa-codepen" aria-hidden="true" />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p
+                  className="landing-text"
+                  style={{
+                    color: "white",
+                    fontSize: "20px",
+                    paddingTop: "35px"
+                  }}
                 >
-                  <i className="fa fa-codepen" aria-hidden="true" />
-                </a>
+                  "Out of the water, I am nothing." – Duke Kahanamoku
+                </p>
               </div>
             </div>
           </Cell>
