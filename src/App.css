@@ -80,6 +80,7 @@
   padding: 8px;
 }
 
+/* Contact page css */
 .contact-body {
   margin: auto;
   /* background: #656e83; */
@@ -113,4 +114,11 @@
 .contact-list i {
   font-size: 50px;
   padding-right: 5rem;
+}
+
+/* Resume page css */
+.resume-right-col {
+  background: #27221f;
+  color: white;
+  padding: 2em;
 }
