@@ -13,7 +13,7 @@ class App extends Component {
           <Header
             className="header-color"
             title={
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <Link style={{ textDecoration: "none", color: "#72C0E2" }} to="/">
                 My Portfolio
               </Link>
             }
@@ -27,7 +27,7 @@ class App extends Component {
           </Header>
           <Drawer
             title={
-              <Link style={{ textDecoration: "none", color: "Black" }} to="/">
+              <Link style={{ textDecoration: "none", color: "#72C0E2" }} to="/">
                 My Portfolio
               </Link>
             }
@@ -38,6 +38,7 @@ class App extends Component {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
+
           <Content>
             <div className="page-content" />
             <Main />

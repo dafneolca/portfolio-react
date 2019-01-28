@@ -73,12 +73,22 @@ class LandingPage extends Component {
                 <p
                   className="landing-text"
                   style={{
-                    color: "white",
-                    fontSize: "20px",
-                    paddingTop: "35px"
+                    fontSize: "28px",
+                    opacity: "0.6",
+                    paddingTop: "170px",
+                    fontFamily: "'Give You Glory', cursive"
                   }}
                 >
-                  "Out of the water, I am nothing." – Duke Kahanamoku
+                  “Oh the things you can find, if you don’t stay behind!”
+                </p>
+                <p
+                  className="landing-text"
+                  style={{
+                    fontSize: "15px",
+                    opacity: "0.6"
+                  }}
+                >
+                  Dr. Seuss
                 </p>
               </div>
             </div>
