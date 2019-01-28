@@ -1,3 +1,7 @@
+body h1 {
+  font: 800 4em "open sans";
+  line-height: 1em;
+}
 .header-color {
   background: #2980b9; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -40,10 +44,10 @@
 .projects-grid {
   display: flex;
 }
-.avatar-image {
+/* .avatar-image {
   height: 250px;
   padding-top: 5em;
-}
+} */
 
 .banner-text {
   background-color: black;
@@ -105,15 +109,130 @@
 }
 
 /* Contact page css */
-.contact-body {
+/* .contact-body {
   margin: auto;
-  /* background: #656e83; */
   position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
   padding-top: 2em;
+} */
+
+.contact-body .background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* background: #225faa; */
+  /* background: linear-gradient(135deg, #bef4f7 0%, complement(#bef4f7) 100%); */
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: scroll;
+  perspective: 1000px;
 }
+
+.contact-body a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 300;
+}
+
+.contact-body .container {
+  width: 90%;
+  max-width: 500px;
+  margin: 200px auto;
+  transform: rotateX(20deg);
+}
+
+.contact-body .outer {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: 0px 2px 1px #aaa;
+  font-size: 2em;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-body .outer-content {
+  z-index: 1;
+}
+
+.contact-body .outer-corner {
+  height: 40px;
+  width: 40px;
+  border-right: 5px solid rgba(255, 255, 255, 0.5);
+  border-top: 5px solid white;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+
+.contact-body .main {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 1) 40px
+  );
+  transform: translateY(-40px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.contact-body .main p {
+  margin: 0px;
+  font-weight: 300;
+}
+.contact-body .main p .st {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.st p {
+  font: 800 2em "open sans";
+  line-height: 1em;
+}
+
+.pd {
+  padding: 40px;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background: url(https://images.unsplash.com/photo-1452110040644-6751c0c95836?crop=entropy&dpr=2&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-size: cover;
+  width: 100%;
+  height: 10px;
+}
+
+.main-outer {
+  height: 40px;
+  width: 40px;
+  border-left: 5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 5px solid rgba(255, 255, 255, 1);
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+}
+
 .contact-grid {
   text-align: center;
   justify-content: center;
@@ -126,13 +245,18 @@
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font: "open sans";
 }
 
 .contact-grid hr {
   border-top: 5px dotted black;
   width: 50%;
   margin: auto;
+}
+
+.contact-list {
+  font: 800 4em "open sans";
+  line-height: 1em;
 }
 
 .contact-list i {
@@ -165,6 +289,7 @@
   font: 800 4em "open sans";
   line-height: 1em;
 }
+
 .bk-title h2 {
   text-align: right;
   font: 800 1em "open sans";
@@ -177,4 +302,29 @@
 
 .highlight {
   color: #ed5565;
+}
+
+.landing-text {
+  font-size: 28px;
+  opacity: 0.6;
+  padding-top: 140px;
+  font-family: "Give You Glory", cursive;
+}
+
+@media (max-width: 400px) {
+  .social-links {
+    justify-content: center;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .main-landing-intro {
+    padding-top: 90px;
+  }
+
+  .landing-text {
+    padding-top: 70px;
+  }
 }

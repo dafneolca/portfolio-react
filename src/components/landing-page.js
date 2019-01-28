@@ -7,14 +7,8 @@ class LandingPage extends Component {
       <div style={{ width: "100%", margin: "auto" }}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            {/* <img
-              src="https://www.clipartmax.com/png/middle/108-1087937_water-wave-icon.png"
-              alt="avatar"
-              className="avatar-image"
-            /> */}
             <div className="main-landing-intro">
               <div className="wavez" />
-              {/* <div classN */}
               <div className="bk-title">
                 <div>
                   <h2
@@ -30,11 +24,6 @@ class LandingPage extends Component {
                 </div>
               </div>
               <div className="banner-text">
-                {/* <h3 style={{ color: "pink" }}>Frontend Web Developer</h3>
-              <h5 style={{ color: "pink" }}>Dafne Olca</h5>
-              <hr />
-              <p>HTML | CSS | Bootstrap | JavaScript | Angular2+ | React</p> */}
-
                 <div className="social-links">
                   <a
                     href="https://linkedin.com/in/dafneolca/"
@@ -71,18 +60,18 @@ class LandingPage extends Component {
               </div>
               <div>
                 <p
-                  className="landing-text"
                   style={{
-                    fontSize: "28px",
-                    opacity: "0.6",
-                    paddingTop: "170px",
-                    fontFamily: "'Give You Glory', cursive"
+                    fontFamily: "Montserrat, sans-serif",
+                    paddingTop: "10px"
                   }}
                 >
+                  HTML | CSS | Bootstrap | JavaScript | Angular2+ | React
+                </p>
+                <p className="landing-text">
                   “Oh the things you can find, if you don’t stay behind!”
                 </p>
                 <p
-                  className="landing-text"
+                  className="landing-text-quote"
                   style={{
                     fontSize: "15px",
                     opacity: "0.6"
